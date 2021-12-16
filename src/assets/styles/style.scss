@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+$gc: #007e6f;
+body {
+    background-color: #efefef;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+.container-full {
+    padding: 0px 25px;
+}
+.admin-content {
+    padding-top: 62px;
+    padding-left: 70px;
+}
