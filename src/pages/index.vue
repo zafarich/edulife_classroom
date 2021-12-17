@@ -124,6 +124,47 @@
                         </router-link>
                     </div>
                 </div>
+
+                <div class="card-row">
+                    <div class="item-6">
+                        <div class="card-box">
+                            <h2 class="text-light mb-24">E'lonlar</h2>
+                            <router-link :to="{ name: `index` }" class="elon">
+                                <div class="image">
+                                    <img
+                                        src="@/assets/img/profile.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <p>
+                                    Dasturlash yo'nalishidagilar uchun yangilik.
+                                    10, 11-yanvar kunlari online contest bo'lib
+                                    o'tadi. Sovrin jamg'armasi 10 million so'm
+                                </p>
+                            </router-link>
+                        </div>
+                    </div>
+                    <div class="item-6">
+                        <div class="card-box">
+                            <h2 class="text-light">Natija</h2>
+
+                            <div class="circle-wrap">
+                                <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">
+                                        <h2>75%</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item-4 mb-24">
                 <div class="card-box">
@@ -446,6 +487,91 @@ export default {};
 
 <style lang="scss">
 @import "@/assets/styles/style.scss";
+
+.circle-wrap {
+    width: 252px;
+    height: 252px;
+    background: rgba(0, 126, 111, 0.1);
+    border-radius: 50%;
+    position: relative;
+    .full,
+    .circle .fill {
+        transform: rotate(90deg);
+    }
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 252px;
+    height: 252px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 252px, 252px, 126px);
+}
+
+.circle-wrap .inside-circle {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 120px;
+    text-align: center;
+
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-weight: 700;
+    font-size: 2em;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 39px;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+    clip: rect(0px, 126px, 252px, 0px);
+    background-color: $gc;
+}
+
+.elon {
+    &:hover {
+        p {
+            color: $gc;
+        }
+    }
+    div.image {
+        overflow: hidden;
+        height: 207px;
+        margin-bottom: 12px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        height: 48px;
+        line-height: 24px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 15px;
+    }
+}
 .card-catalog {
     padding: 15px;
     display: block;
