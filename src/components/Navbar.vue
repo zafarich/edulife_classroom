@@ -185,7 +185,6 @@ nav.navbar {
     left: 0;
     background-color: #fff;
     z-index: 100;
-
     padding-top: 77px;
     height: 100vh;
     ul {
