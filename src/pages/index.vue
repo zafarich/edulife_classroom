@@ -201,7 +201,7 @@
                         <div class="item-6">
                             <router-link
                                 class="right-links"
-                                :to="{ name: `index` }"
+                                :to="{ name: `contest` }"
                             >
                                 <div class="top-icon">
                                     <svg

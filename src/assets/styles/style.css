@@ -51,6 +51,34 @@ button:focus {
   outline: none;
 }
 
+.text-22 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.text-normal {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.text-normal b {
+  margin-right: 10px;
+}
+
+.box-10 {
+  padding: 10px 0px;
+  border-bottom: 1px solid #efefef;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .container-full {
   padding: 0px 25px;
 }
@@ -70,6 +98,10 @@ button:focus {
 
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 .text-bold {

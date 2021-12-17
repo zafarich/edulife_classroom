@@ -41,15 +41,6 @@ const routes = [
                 },
             },
             {
-                path: "contest",
-                name: "contest",
-                component: function () {
-                    return import(
-                        /* webpackChunkName: "about" */ "../pages/contest/index.vue"
-                    );
-                },
-            },
-            {
                 path: "chat",
                 name: "chat",
                 component: function () {
@@ -82,6 +73,24 @@ const routes = [
                 component: function () {
                     return import(
                         /* webpackChunkName: "about" */ "../pages/profil/index.vue"
+                    );
+                },
+            },
+            {
+                path: "contest",
+                name: "contest",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/contest/index.vue"
+                    );
+                },
+            },
+            {
+                path: "contest/:id",
+                name: "contest-id",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/contest/one.vue"
                     );
                 },
             },
