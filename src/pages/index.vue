@@ -159,6 +159,7 @@
                                     </div>
                                     <div class="inside-circle">
                                         <h2>75%</h2>
+                                        <h4>Frontend</h4>
                                     </div>
                                 </div>
                             </div>

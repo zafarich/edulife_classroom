@@ -151,9 +151,9 @@ div.table-all {
                 color: #004c43;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: 15px;
                 line-height: 30px;
-                padding: 15px 20px;
+                padding: 15px 13px;
                 text-align: left;
                 background: rgba(0, 126, 111, 0.1);
             }
@@ -161,15 +161,15 @@ div.table-all {
         tbody {
             td {
                 font-weight: normal;
-                font-size: 20px;
+                font-size: 15px;
                 line-height: 30px;
-                padding: 15px 20px;
+                padding: 15px 13px;
 
                 color: #000000;
             }
             td.light-td {
                 font-weight: normal;
-                font-size: 20px;
+                font-size: 15px;
                 line-height: 30px;
                 color: rgba(0, 0, 0, 0.6);
             }
@@ -185,4 +185,29 @@ div.table-all {
             }
         }
     }
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+    background: #262e2d;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #262e2d;
 }
