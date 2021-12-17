@@ -161,9 +161,14 @@
                         </button>
 
                         <div class="header-profile">
-                            <div class="img-account">
-                                <img src="@/assets/img/profile.png" alt="" />
-                            </div>
+                            <router-link :to="{ name: 'profil' }">
+                                <div class="img-account">
+                                    <img
+                                        src="@/assets/img/profile.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </router-link>
                         </div>
                     </div>
                 </div>

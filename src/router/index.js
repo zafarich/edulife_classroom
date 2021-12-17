@@ -67,6 +67,15 @@ const routes = [
                     );
                 },
             },
+            {
+                path: "profil",
+                name: "profil",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/profil/index.vue"
+                    );
+                },
+            },
         ],
     },
 ];
