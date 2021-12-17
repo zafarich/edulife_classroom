@@ -146,7 +146,7 @@
                         </div>
                     </div>
                     <div class="item-6">
-                        <div class="card-box">
+                        <div class="card-box h-100">
                             <h2 class="text-light">Natija</h2>
 
                             <div class="circle-wrap">
@@ -158,8 +158,10 @@
                                         <div class="fill"></div>
                                     </div>
                                     <div class="inside-circle">
-                                        <h2>75%</h2>
-                                        <h4>Frontend</h4>
+                                        <div>
+                                            <h2>75%</h2>
+                                            <h4>Frontend</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -520,7 +522,9 @@ export default {};
     background: #fff;
     line-height: 120px;
     text-align: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #000;
     position: absolute;
     top: 50%;
