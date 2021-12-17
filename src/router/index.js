@@ -76,6 +76,15 @@ const routes = [
                     );
                 },
             },
+            {
+                path: "contest",
+                name: "contest",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/contest/index.vue"
+                    );
+                },
+            },
         ],
     },
 ];
