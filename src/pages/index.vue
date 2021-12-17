@@ -147,20 +147,22 @@
                     </div>
                     <div class="item-6">
                         <div class="card-box h-100">
-                            <h2 class="text-light">Natija</h2>
+                            <h2 class="text-light mb-24">Natija</h2>
 
-                            <div class="circle-wrap">
-                                <div class="circle">
-                                    <div class="mask full">
-                                        <div class="fill"></div>
-                                    </div>
-                                    <div class="mask half">
-                                        <div class="fill"></div>
-                                    </div>
-                                    <div class="inside-circle">
-                                        <div>
-                                            <h2>75%</h2>
-                                            <h4>Frontend</h4>
+                            <div class="flex-align-center">
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="inside-circle">
+                                            <div>
+                                                <h2>75%</h2>
+                                                <h4>Frontend</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -536,6 +538,21 @@ export default {};
     font-weight: 600;
     font-size: 31px;
     line-height: 39px;
+    h2 {
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 39px;
+        letter-spacing: 0.05em;
+
+        color: #000000;
+    }
+    h4 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: rgba(0, 0, 0, 0.6);
+    }
 }
 
 /* color animation */
