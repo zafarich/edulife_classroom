@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="olimp">
-            <div class="card-box">
+        <div class="contest">
+            <div class="card-box top">
                 <button class="flex">
                     <span class="flex"
                         ><svg
@@ -49,4 +49,9 @@ export default {};
 
 <style lang="scss" scoped>
 @import "@/assets/styles/style.scss";
+.contest {
+    .top {
+        display: flex;
+    }
+}
 </style>

@@ -199,7 +199,7 @@
                         <div class="item-6">
                             <router-link
                                 class="right-links"
-                                :to="{ name: `olimpiada` }"
+                                :to="{ name: `contest` }"
                             >
                                 <div class="top-icon">
                                     <svg
