@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="card-box">
-                        <div class="newcourse">
+                        <div class="">
                             <div class="title-box">
                                 <h2>Profil ma’lumotlari</h2>
                             </div>
@@ -186,11 +186,11 @@
                 </div>
 
                 <div class="item-5">
-                    <div class="card-box courses scroll">
-                        <div class="newcourse">
-                            <div class="title-box">
-                                <h2>Yangi kurslar</h2>
-                            </div>
+                    <div class="card-box courses">
+                        <div class="title-box">
+                            <h2>Yangi kurslar</h2>
+                        </div>
+                        <div class="newcourse scroll">
                             <div class="course flex">
                                 <div class="img">
                                     <img src="@/assets/img/course.png" alt="" />
@@ -336,8 +336,8 @@
                                         src="@/assets/img/profile.png"
                                         alt=""
                                     />
-                                    <span class="plus"
-                                        ><svg
+                                    <button class="plus">
+                                        <svg
                                             width="14"
                                             height="14"
                                             viewBox="0 0 14 14"
@@ -349,13 +349,12 @@
                                                 fill="#262E2D"
                                             />
                                         </svg>
-                                    </span>
+                                    </button>
                                 </div>
                                 <div class="form">
                                     <div class="input">
                                         <input
                                             type="text"
-                                            disabled="disabled"
                                             value="Farrux Bozorboyev"
                                         />
                                         <span
@@ -376,7 +375,6 @@
                                     <div class="input">
                                         <input
                                             type="text"
-                                            disabled="disabled"
                                             value="+998 33 513 60 53"
                                         />
                                         <span
@@ -568,7 +566,7 @@ export default {};
             transform: translate(-50%, 0);
             margin-bottom: 30px;
 
-            span {
+            button {
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
@@ -614,10 +612,13 @@ export default {};
                     background: #efefef;
                     border-radius: 30px;
                     padding: 10px 20px;
-                    border: 0;
+                    border: 1px solid transparent;
                     font-size: 20px;
                     line-height: 30px;
                     color: #303030;
+                    &:focus {
+                        outline: 1px solid $gc;
+                    }
                 }
             }
         }
@@ -631,10 +632,12 @@ export default {};
         }
     }
     .courses {
-        height: 593px;
-        overflow-y: scroll;
+        padding-right: 0;
     }
     .newcourse {
+        height: 504px;
+        overflow-y: scroll;
+        padding-right: 20px;
         .course {
             margin-bottom: 15px;
             .img {
