@@ -40,7 +40,10 @@
                         </span>
                         Olimpiada
                     </button>
-                    <button class="flex">
+                    <router-link
+                        :to="{ name: `contest-question` }"
+                        class="flex"
+                    >
                         <span class="flex"
                             ><svg
                                 width="14"
@@ -57,7 +60,7 @@
                             </svg>
                         </span>
                         Olimpiada
-                    </button>
+                    </router-link>
                 </div>
             </div>
 
@@ -105,81 +108,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr v-for="(item, index) in 10" :key="index">
                                 <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
-                                <td class="light-td">1%</td>
-                                <td class="light-td">Oson</td>
-                                <td class="light-td">9774</td>
-                                <td class="light-td">5431</td>
-                            </tr>
-                            <tr>
-                                <td>0001</td>
-                                <td class="light-td">A+B</td>
+                                <td class="light-td">
+                                    <router-link :to="{ name: `contest-id` }">
+                                        A+B
+                                    </router-link>
+                                </td>
                                 <td class="light-td">1%</td>
                                 <td class="light-td">Oson</td>
                                 <td class="light-td">9774</td>
@@ -201,7 +136,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            table: {},
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -247,8 +188,9 @@ export default {};
         .buttons {
             display: flex;
         }
-        button {
-            margin-right: 20px;
+        a {
+            margin-left: 20px;
+            color: #000000;
             span {
                 margin-right: 10px;
             }

@@ -94,6 +94,15 @@ const routes = [
                     );
                 },
             },
+            {
+                path: "contest/question",
+                name: "contest-question",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/contest/question.vue"
+                    );
+                },
+            },
         ],
     },
 ];
