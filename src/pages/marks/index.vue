@@ -14,6 +14,11 @@
                                 </div>
                                 <div class="info-card">
                                     <h3>Figma UI/UX design</h3>
+                                    <div class="result">
+                                        <p><span>34/118</span> Video darslar</p>
+                                        <p><span>4/17</span> Vazifalar</p>
+                                        <p><span>5/7</span> Test</p>
+                                    </div>
                                     <p>Natija: 70%</p>
                                 </div>
                             </div>
@@ -27,6 +32,13 @@
                                 </div>
                                 <div class="info-card">
                                     <h3>Figma UI/UX design</h3>
+                                    <div class="result">
+                                        <p>
+                                            <span>118/118</span> Video darslar
+                                        </p>
+                                        <p><span>17/17</span> Vazifalar</p>
+                                        <p><span>7/7</span> Test</p>
+                                    </div>
                                     <p class="flex">
                                         Natija: 100%
                                         <span class="flex"
@@ -117,6 +129,21 @@ export default {};
                     font-size: 20px;
                     line-height: 30px;
                     color: #000000;
+                }
+                .result {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 12px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: rgba(0, 0, 0, 0.6);
+                        span {
+                            color: rgba(0, 0, 0);
+                        }
+                    }
                 }
                 p {
                     font-size: 16px;
