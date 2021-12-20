@@ -41,6 +41,15 @@ const routes = [
                 },
             },
             {
+                path: "courses/:id",
+                name: "courses-id",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/courses/one.vue"
+                    );
+                },
+            },
+            {
                 path: "chat",
                 name: "chat",
                 component: function () {

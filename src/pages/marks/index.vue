@@ -7,7 +7,9 @@
                 </div>
                 <div class="card-row">
                     <div class="item-3" v-for="item in 2" :key="item">
-                        <router-link :to="{ name: `index` }">
+                        <router-link
+                            :to="{ name: `courses-id`, params: { id: 1 } }"
+                        >
                             <div class="card-box card-top">
                                 <div class="img">
                                     <img src="@/assets/img/kurs.png" alt="" />
@@ -25,7 +27,9 @@
                         </router-link>
                     </div>
                     <div class="item-3" v-for="item in 2" :key="item">
-                        <router-link :to="{ name: `index` }">
+                        <router-link
+                            :to="{ name: `courses-id`, params: { id: 1 } }"
+                        >
                             <div class="card-box card-top">
                                 <div class="img">
                                     <img src="@/assets/img/kurs.png" alt="" />
@@ -70,7 +74,7 @@
                     <div class="item-4" v-for="item in 6" :key="item">
                         <router-link
                             class="card-bottom flex"
-                            :to="{ name: `index` }"
+                            :to="{ name: `courses-id`, params: { id: 1 } }"
                         >
                             <div class="img">
                                 <img src="@/assets/img/kurs.png" alt="" />
