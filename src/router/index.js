@@ -112,6 +112,15 @@ const routes = [
                     );
                 },
             },
+            {
+                path: "courses/one",
+                name: "courses-one",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/courses/one.vue"
+                    );
+                },
+            },
         ],
     },
 ];

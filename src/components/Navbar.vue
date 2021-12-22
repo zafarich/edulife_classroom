@@ -81,7 +81,7 @@
                 <li>
                     <router-link
                         router-link-exact-active
-                        :to="{ name: `vacancy` }"
+                        :to="{ name: `courses-one` }"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
