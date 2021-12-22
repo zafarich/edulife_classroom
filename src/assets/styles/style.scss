@@ -221,6 +221,26 @@ div.table-all {
         }
     }
 }
+div.back-top {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 12px 20px;
+    button {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: rgba(0, 0, 0, 0.8);
+        span {
+            margin-left: 9px;
+        }
+    }
+}
 .flex {
     display: flex;
     justify-content: space-between;

@@ -95,6 +95,33 @@ const routes = [
                 },
             },
             {
+                path: "pages",
+                name: "pages",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/pages.vue"
+                    );
+                },
+            },
+            {
+                path: "english",
+                name: "english",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/english"
+                    );
+                },
+            },
+            {
+                path: "alphabet",
+                name: "alphabet",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/english/alphabet"
+                    );
+                },
+            },
+            {
                 path: "contest/:id",
                 name: "contest-id",
                 component: function () {

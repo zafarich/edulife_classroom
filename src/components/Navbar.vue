@@ -116,6 +116,15 @@
                         </svg>
                     </router-link>
                 </li>
+
+                <li>
+                    <router-link
+                        router-link-exact-active
+                        :to="{ name: `pages` }"
+                    >
+                        .
+                    </router-link>
+                </li>
             </ul>
         </nav>
 
