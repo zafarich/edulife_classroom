@@ -18,7 +18,7 @@
                     </router-link>
                 </div>
                 <div class="item-4">
-                    <router-link class="english-top" :to="{ name: `index` }">
+                    <router-link class="english-top" :to="{ name: `number` }">
                         <span class="vector">
                             <img src="@/assets/img/top1.png" alt="" />
                         </span>

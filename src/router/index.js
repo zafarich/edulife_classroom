@@ -122,6 +122,15 @@ const routes = [
                 },
             },
             {
+                path: "number",
+                name: "number",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/english/number"
+                    );
+                },
+            },
+            {
                 path: "contest/:id",
                 name: "contest-id",
                 component: function () {
