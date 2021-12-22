@@ -240,7 +240,7 @@ div.table-all table tbody td {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  padding: 15px 13px;
+  padding: 10px 13px;
   color: #000000;
 }
 
@@ -257,6 +257,31 @@ div.table-all table tbody tr:nth-child(2n) td {
 
 div.table-all table tbody tr:hover td {
   background: rgba(0, 126, 111, 0.05);
+}
+
+div.back-top {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+div.back-top button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.back-top button span {
+  margin-left: 9px;
 }
 
 .flex {
