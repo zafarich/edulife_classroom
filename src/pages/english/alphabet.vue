@@ -36,7 +36,10 @@
 
                         <div class="bot">
                             <abbr title="Eshitish uchun bosing">
-                                <button class="voice">
+                                <button
+                                    class="voice"
+                                    @click="clickSpeech(item.char)"
+                                >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="22"
@@ -55,8 +58,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-2">1</div>
-                <div class="item-2">1</div>
             </div>
         </div>
     </div>
@@ -231,6 +232,15 @@ export default {
                 dizayn: ["id3"],
             },
         };
+    },
+    methods: {
+        clickSpeech(text) {
+            const synth = window.speechSynthesis;
+            const speakText = new SpeechSynthesisUtterance(text);
+            speakText.lang = "en-US";
+            speakText.rate = 1;
+            synth.speak(speakText);
+        },
     },
 };
 </script>
