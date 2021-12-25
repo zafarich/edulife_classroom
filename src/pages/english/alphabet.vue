@@ -240,7 +240,6 @@ div.alp-item {
     background: #ffffff;
     border-radius: 5px;
     padding: 15px 5px 5px 5px;
-    // height: 100%;
     margin-bottom: 24px;
     div.picture {
         display: flex;
