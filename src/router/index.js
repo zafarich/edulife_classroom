@@ -122,6 +122,15 @@ const routes = [
                 },
             },
             {
+                path: "number",
+                name: "number",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/english/number"
+                    );
+                },
+            },
+            {
                 path: "contest/:id",
                 name: "contest-id",
                 component: function () {
@@ -136,6 +145,15 @@ const routes = [
                 component: function () {
                     return import(
                         /* webpackChunkName: "about" */ "../pages/contest/question.vue"
+                    );
+                },
+            },
+            {
+                path: "courses/one",
+                name: "courses-one",
+                component: function () {
+                    return import(
+                        /* webpackChunkName: "about" */ "../pages/courses/one.vue"
                     );
                 },
             },
