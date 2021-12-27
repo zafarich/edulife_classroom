@@ -1,11 +1,30 @@
 <template>
     <div>
-        <h4>CHAT</h4>
+        <div class="view">
+            <Viewcode :code="code" :lang="`css`" />
+        </div>
     </div>
 </template>
 
 <script>
-export default {};
+import Viewcode from "../../components/Viewcode.vue";
+export default {
+    components: {
+        Viewcode,
+    },
+    data() {
+        return {
+            options: {},
+            code: "div.asd{ width: 100% }",
+        };
+    },
+
+    methods: {},
+};
 </script>
 
-<style></style>
+<style lang="scss">
+.view {
+    max-width: 50%;
+}
+</style>

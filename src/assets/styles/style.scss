@@ -14,6 +14,17 @@ body {
     background-color: #efefef;
     padding-bottom: 25px;
 }
+pre {
+    width: 100%;
+    padding: 3rem 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    code {
+        width: 100%;
+        padding: 20px;
+    }
+}
 a {
     text-decoration: none;
 }

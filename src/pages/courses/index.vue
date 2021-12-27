@@ -192,255 +192,25 @@
                                         </button>
                                     </div>
                                     <div class="code" v-if="tabCode == 1">
-                                        <pre
-                                            class="language-javascript"
-                                        ><code>function merge(arr, l, m, r)
-{
-    var n1 = m - l + 1;
-    var n2 = r - m;
-  
-    // Create temp arrays
-    var L = new Array(n1); 
-    var R = new Array(n2);
-  
-    // Copy data to temp arrays L[] and R[]
-    for (var i = 0; i &lt; n1; i++)
-        L[i] = arr[l + i];
-    for (var j = 0; j &lt; n2; j++)
-        R[j] = arr[m + 1 + j];
-  
-    // Merge the temp arrays back into arr[l..r]
-  
-    // Initial index of first subarray
-    var i = 0;
-  
-    // Initial index of second subarray
-    var j = 0;
-  
-    // Initial index of merged subarray
-    var k = l;
-  
-    while (i &lt; n1 &amp;&amp; j &lt; n2) {
-        if (L[i] &lt;= R[j]) {
-            arr[k] = L[i];
-            i++;
-        }
-        else {
-            arr[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-  
-    // Copy the remaining elements of
-    // L[], if there are any
-    while (i &lt; n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
-    }
-  
-    // Copy the remaining elements of
-    // R[], if there are any
-    while (j &lt; n2) {
-        arr[k] = R[j];
-        j++;
-        k++;
-    }
-}
-  
-// l is for left index and r is
-// right index of the sub-array
-// of arr to be sorted */
-function mergeSort(arr,l, r){
-    if(l&gt;=r){
-        return;//returns recursively
-    }
-    var m =l+ parseInt((r-l)/2);
-    mergeSort(arr,l,m);
-    mergeSort(arr,m+1,r);
-    merge(arr,l,m,r);
-}
-  
-// UTILITY FUNCTIONS
-// Function to print an array
-function printArray( A, size)
-{
-    for (var i = 0; i &lt; size; i++)
-       document.write(  A[i] + " ");
-}
-  
-  
-var arr = [ 12, 11, 13, 5, 6, 7 ];
-    var arr_size = arr.length;
-  
-    document.write(  "Given array is &lt;br&gt;");
-    printArray(arr, arr_size);
-  
-    mergeSort(arr, 0, arr_size - 1);
-  
-    document.write( "&lt;br&gt;Sorted array is &lt;br&gt;");
-    printArray(arr, arr_size);
-  </code></pre>
+                                        <code-highlight language="javascript">
+                                            <pre class="language-javascript">{{
+                                                jscode
+                                            }}</pre>
+                                        </code-highlight>
                                     </div>
                                     <div class="code" v-if="tabCode == 2">
-                                        <pre
-                                            class="language-cpp"
-                                        ><code>#include &lt;iostream&gt;
-using namespace std;
-  
-// Merges two subarrays of array[].
-// First subarray is arr[begin..mid]
-// Second subarray is arr[mid+1..end]
-void merge(int array[], int const left, int const mid, int const right)
-{
-    auto const subArrayOne = mid - left + 1;
-    auto const subArrayTwo = right - mid;
-  
-    // Create temp arrays
-    auto *leftArray = new int[subArrayOne],
-         *rightArray = new int[subArrayTwo];
-  
-    // Copy data to temp arrays leftArray[] and rightArray[]
-    for (auto i = 0; i &lt; subArrayOne; i++)
-        leftArray[i] = array[left + i];
-    for (auto j = 0; j &lt; subArrayTwo; j++)
-        rightArray[j] = array[mid + 1 + j];
-  
-    auto indexOfSubArrayOne = 0, // Initial index of first sub-array
-        indexOfSubArrayTwo = 0; // Initial index of second sub-array
-    int indexOfMergedArray = left; // Initial index of merged array
-  
-    // Merge the temp arrays back into array[left..right]
-    while (indexOfSubArrayOne &lt; subArrayOne &amp;&amp; indexOfSubArrayTwo &lt; subArrayTwo) {
-        if (leftArray[indexOfSubArrayOne] &lt;= rightArray[indexOfSubArrayTwo]) {
-            array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
-            indexOfSubArrayOne++;
-        }
-        else {
-            array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
-            indexOfSubArrayTwo++;
-        }
-        indexOfMergedArray++;
-    }
-    // Copy the remaining elements of
-    // left[], if there are any
-    while (indexOfSubArrayOne &lt; subArrayOne) {
-        array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
-        indexOfSubArrayOne++;
-        indexOfMergedArray++;
-    }
-    // Copy the remaining elements of
-    // right[], if there are any
-    while (indexOfSubArrayTwo &lt; subArrayTwo) {
-        array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
-        indexOfSubArrayTwo++;
-        indexOfMergedArray++;
-    }
-}
-  
-// begin is for left index and end is
-// right index of the sub-array
-// of arr to be sorted */
-void mergeSort(int array[], int const begin, int const end)
-{
-    if (begin &gt;= end)
-        return; // Returns recursively
-  
-    auto mid = begin + (end - begin) / 2;
-    mergeSort(array, begin, mid);
-    mergeSort(array, mid + 1, end);
-    merge(array, begin, mid, end);
-}
-  
-// UTILITY FUNCTIONS
-// Function to print an array
-void printArray(int A[], int size)
-{
-    for (auto i = 0; i &lt; size; i++)
-        cout &lt;&lt; A[i] &lt;&lt; " ";
-}
-  
-// Driver code
-int main()
-{
-    int arr[] = { 12, 11, 13, 5, 6, 7 };
-    auto arr_size = sizeof(arr) / sizeof(arr[0]);
-  
-    cout &lt;&lt; "Given array is \n";
-    printArray(arr, arr_size);
-  
-    mergeSort(arr, 0, arr_size - 1);
-  
-    cout &lt;&lt; "\nSorted array is \n";
-    printArray(arr, arr_size);
-    return 0;
-}</code></pre>
+                                        <code-highlight language="javascript">
+                                            <pre class="language-javascript">{{
+                                                jscode
+                                            }}</pre>
+                                        </code-highlight>
                                     </div>
                                     <div class="code" v-if="tabCode == 3">
-                                        <pre
-                                            class="language-python"
-                                        ><code># Python program for implementation of MergeSort
-def mergeSort(arr):
-    if len(arr) &gt; 1:
-  
-         # Finding the mid of the array
-        mid = len(arr)//2
-  
-        # Dividing the array elements
-        L = arr[:mid]
-  
-        # into 2 halves
-        R = arr[mid:]
-  
-        # Sorting the first half
-        mergeSort(L)
-  
-        # Sorting the second half
-        mergeSort(R)
-  
-        i = j = k = 0
-  
-        # Copy data to temp arrays L[] and R[]
-        while i &lt; len(L) and j &lt; len(R):
-            if L[i] &lt; R[j]:
-                arr[k] = L[i]
-                i += 1
-            else:
-                arr[k] = R[j]
-                j += 1
-            k += 1
-  
-        # Checking if any element was left
-        while i &lt; len(L):
-            arr[k] = L[i]
-            i += 1
-            k += 1
-  
-        while j &lt; len(R):
-            arr[k] = R[j]
-            j += 1
-            k += 1
-  
-# Code to print the list
-  
-  
-def printList(arr):
-    for i in range(len(arr)):
-        print(arr[i], end=" ")
-    print()
-  
-  
-# Driver Code
-if __name__ == '__main__':
-    arr = [12, 11, 13, 5, 6, 7]
-    print("Given array is", end="\n")
-    printList(arr)
-    mergeSort(arr)
-    print("Sorted array is: ", end="\n")
-    printList(arr)
-  
-# This code is contributed by Mayank Khanna</code></pre>
+                                        <code-highlight language="javascript">
+                                            <pre class="language-javascript">{{
+                                                jscode
+                                            }}</pre>
+                                        </code-highlight>
                                     </div>
                                     <div class="code" v-if="tabCode == 4">
                                         <pre
@@ -740,9 +510,9 @@ export default {
 .tab-container {
     background: #d1d1d1;
     .code {
-        padding: 20px;
-        .token-tag {
-            color: red;
+        pre {
+            margin: 0 !important;
+            border-radius: 0 3px 3px 3px;
         }
     }
 }
@@ -751,9 +521,11 @@ export default {
     background: #fff;
     button {
         padding: 10px;
+        border-radius: 3px 3px 0 0;
     }
     button.active {
-        background: #d1d1d1;
+        background: #1d262f;
+        color: #fff;
     }
 }
 .courses {
