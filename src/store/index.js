@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         loading: false,
+        isMenu: false
     },
     mutations: {
         CHANGE_LOADING(state, data) {
